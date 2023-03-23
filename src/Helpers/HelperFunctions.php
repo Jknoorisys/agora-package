@@ -27,9 +27,8 @@ use Illuminate\Support\Facades\Config;
 
     function GetToken($user_id, $channelName){
     
-        $appID         =   env('APP_ID');
-        $appCertificate    =   env('APP_CERTIFICATE');
-        // $channelName  =   (string) random_int(100000000, 9999999999999999);
+        $appID         =   Config::get('agora.AGORA_APP_ID');
+        $appCertificate    =   Config::get('agora.AGORA_APP_CERTIFICATE');
         $uid = $user_id;
         $uidStr = ($user_id) . '';
         $role = RtcTokenBuilder::RolePublisher;
