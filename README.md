@@ -2,14 +2,6 @@
 
 [![Latest Stable Version](http://poser.pugx.org/phpunit/phpunit/v)](https://packagist.org/packages/phpunit/phpunit) [![Total Downloads](http://poser.pugx.org/phpunit/phpunit/downloads)](https://packagist.org/packages/phpunit/phpunit) [![Latest Unstable Version](http://poser.pugx.org/phpunit/phpunit/v/unstable)](https://packagist.org/packages/phpunit/phpunit) [![License](http://poser.pugx.org/phpunit/phpunit/license)](https://packagist.org/packages/phpunit/phpunit) [![PHP Version Require](http://poser.pugx.org/phpunit/phpunit/require/php)](https://packagist.org/packages/phpunit/phpunit)
 
-**This project is not meant for re-use.**
-
-It is open source to make it easy to contribute. We provide no support
-if you want to run your own, and will do breaking changes without notice.
-
-Check out [Private Packagist](https://packagist.com/) if you want to
-host your own packages.
-
 ## Development
 
 These steps are provided for development purposes only.
@@ -17,10 +9,8 @@ These steps are provided for development purposes only.
 ### Requirements
 
 - **PHP** for the web app
-- **NPM** for the frontend build
 - **[Symfony CLI](https://symfony.com/download)** to run the web server
 - **MySQL** (or Docker) for the main data store
-- **Redis** (or Docker) for some functionality (favorites, download statistics)
 - **git / svn / hg** depending on which repositories you want to support
 
 ### Installation
