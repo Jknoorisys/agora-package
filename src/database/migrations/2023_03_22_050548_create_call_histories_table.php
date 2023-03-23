@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('call_histories', function (Blueprint $table) {
             $table->id();
-            $table->string('caller_id');
-            $table->string('receiver_id');
-            $table->string('call_type');
-            $table->string('status');
+            $table->string('caller_id')->nullable();
+            $table->string('receiver_id')->nullable();
+            $table->string('call_type')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
