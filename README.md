@@ -12,7 +12,7 @@ $ composer require noorisys/agora
 Add the service provider to `config/app.php` in the `providers` array.
 
 ```php
-        Noorisys\Agora\Providers\AgoraServiceProvider::class,
+Noorisys\Agora\Providers\AgoraServiceProvider::class,
 ```
 
 ## Configuration
