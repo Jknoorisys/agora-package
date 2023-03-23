@@ -30,7 +30,7 @@ class AgoraServiceProvider extends ServiceProvider
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'agora');
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'agora');
     }
 
     public function register()
