@@ -3,48 +3,33 @@
 [![Latest Stable Version](http://poser.pugx.org/phpunit/phpunit/v)](https://packagist.org/packages/phpunit/phpunit) [![Total Downloads](http://poser.pugx.org/phpunit/phpunit/downloads)](https://packagist.org/packages/phpunit/phpunit) [![Latest Unstable Version](http://poser.pugx.org/phpunit/phpunit/v/unstable)](https://packagist.org/packages/phpunit/phpunit) [![License](http://poser.pugx.org/phpunit/phpunit/license)](https://packagist.org/packages/phpunit/phpunit) [![PHP Version Require](http://poser.pugx.org/phpunit/phpunit/require/php)](https://packagist.org/packages/phpunit/phpunit)
 
 ## Installation
-Require this package, with [Composer](https://getcomposer.org), in the root directory of your project.
+Require this package, with [Composer](https://packagist.org/), in the root directory of your project.
 
 ```bash
-$ composer require vimeo/laravel
+$ [composer require vimeo/laravel](https://packagist.org/)
 ```
 
-Add the service provider to `config/app.php` in the `providers` array, or if you're using Laravel 5.5, this can be done via the automatic package discovery.
+Add the service provider to `config/app.php` in the `providers` array.
 
 ```php
-Vimeo\Laravel\VimeoServiceProvider::class
-```
-
-If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
-
-```php
-'Vimeo' => Vimeo\Laravel\Facades\Vimeo::class
+        Noorisys\Agora\Providers\AgoraServiceProvider::class,
 ```
 
 ## Configuration
 
-Laravel Vimeo requires connection configuration. To get started, you'll need to publish all vendor assets:
+Laravel Agora requires connection configuration. To get started, you'll need to publish all vendor assets:
 
 ```bash
-$ php artisan vendor:publish --provider="Vimeo\Laravel\VimeoServiceProvider"
+$ php artisan vendor:publish --provider="Noorisys\Agora\Providers\AgoraServiceProvider"
 ```
 
-This will create a `config/vimeo.php` file in your app that you can modify to set your configuration. Also, make sure you check for changes to the original config file in this package between releases.
+This will create a `config/agora.php` file in your app that you can modify to set your configuration. Also, make sure you check for changes to the original config file in this package between releases.
 
 You are free to change the configuration file as needed, but the default expected values are below:
 
 ```php
-VIMEO_CLIENT=
-VIMEO_SECRET=
-VIMEO_ACCESS=
-```
-
-and for setting up the alternate connection...
-
-```php
-VIMEO_ALT_CLIENT=
-VIMEO_ALT_SECRET=
-VIMEO_ALT_ACCESS=
+'AGORA_APP_ID' => env('AGORA_APP_ID'),
+'AGORA_APP_CERTIFICATE' => env('AGORA_APP_CERTIFICATE'),
 ```
 
 #### Default Connection Name
