@@ -27,6 +27,9 @@ class AgoraServiceProvider extends ServiceProvider
         ]);
 
         $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+        $this->publishes([
+            __DIR__.'/../routes' => base_path('routes'),
+        ]);
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
