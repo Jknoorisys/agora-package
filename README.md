@@ -2,24 +2,11 @@
 
 [![Latest Stable Version](http://poser.pugx.org/phpunit/phpunit/v)](https://packagist.org/packages/phpunit/phpunit) [![Total Downloads](http://poser.pugx.org/phpunit/phpunit/downloads)](https://packagist.org/packages/phpunit/phpunit) [![Latest Unstable Version](http://poser.pugx.org/phpunit/phpunit/v/unstable)](https://packagist.org/packages/phpunit/phpunit) [![License](http://poser.pugx.org/phpunit/phpunit/license)](https://packagist.org/packages/phpunit/phpunit) [![PHP Version Require](http://poser.pugx.org/phpunit/phpunit/require/php)](https://packagist.org/packages/phpunit/phpunit)
 
-## Development
-
-These steps are provided for development purposes only.
-
-### Requirements
-
-- **PHP** for the web app
-- **[Symfony CLI](https://symfony.com/download)** to run the web server
-- **MySQL** (or Docker) for the main data store
-- **git / svn / hg** depending on which repositories you want to support
-
 ### Installation
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   composer install
-   npm install
+Via Composer:
+   ```
+   composer require noorisys/agora
    ```
 3. Start the web server:
    ```bash
