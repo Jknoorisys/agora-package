@@ -16,11 +16,11 @@
    
    ```
    'providers' => [
-    /*
-     * Application Service Providers...
-     */
-    Noorisys\Agora\Providers\AgoraServiceProvider::class,
-],
+       /*
+        * Application Service Providers...
+        */
+       Noorisys\Agora\Providers\AgoraServiceProvider::class,
+   ],
 ```
    
 ### Usage
