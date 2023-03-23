@@ -4,11 +4,26 @@
 
 ### Installation
 
-Via Composer:
+
+   #### Laravel:
+   Require this package in your composer.json and update composer. This will download the package and the dompdf + fontlib libraries also.
+   
    ```
    composer require noorisys/agora
    ```
-3. Start the web server:
+   
+   After updating composer add the following lines to register provider in ```config/app.php```
+   
+   ```
+   'providers' => [
+    /*
+     * Application Service Providers...
+     */
+    Noorisys\Agora\Providers\AgoraServiceProvider::class,
+],
+```
+   
+### Usage
    ```bash
    symfony serve
    ```
