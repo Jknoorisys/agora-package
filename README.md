@@ -1,7 +1,7 @@
 # Laravel Package to Generate Agora Token
 
 ### Steps
-_ composer require noorisys/agora
+_* composer require noorisys/agora
 
 _ add (\Noorisys\Agora\Providers\AgoraServiceProvider::class,) in config/app.php providers section
 
