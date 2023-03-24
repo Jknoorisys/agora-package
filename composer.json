@@ -1,6 +1,6 @@
 {
     "name": "noorisys/agora",
-    "description": "Laravel Agora Tocken Generation using willywes agora sdk",
+    "description": "Laravel Agora Token Generation using willywes agora sdk",
     "autoload": {
         "psr-4": {
             "Noorisys\\Agora\\": "src/"
